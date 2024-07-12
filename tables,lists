@@ -1,0 +1,53 @@
+grouped_data = [
+  {
+    table: 'set1',
+    list: %w[a1 b1 c1 d1]
+  },
+  {
+    table: 'set2',
+    list: %w[a2 b2 d2]
+  },
+  {
+    table: 'set3',
+    list: %w[a3 c3 d3]
+  },
+  {
+    table: 'set4',
+    list: %w[c4 d4]
+  },
+]
+expected_output_1 = [
+  %w[set1 set2 set3 set4],
+  %w[a1 a2 a3 -],
+  %w[b1 b2 - -],
+  %w[c1 - c3 c4],
+  %w[d1 d2 d3 d4],
+]
+2. try to transform the array
+
+sets = grouped_data.map{|x|x[:table]}
+# simplify the code using each
+
+for i in element
+ans = grouped_data.map{|x|x[:list]}.map{|x|x.select{|y|y.include? i}}.map{|x|
+   if x == []
+      x = "-"
+     else
+     x
+     end}.flatten
+answer << ans
+end
+
+
+answer
+// transpose array
+len = answer.length
+transpose_arr = []
+for i in 0...len-1
+   arr = answer.map{|x|x[i]}
+  transpose_arr << arr
+ end
+ transpose_arr
+
+
+     

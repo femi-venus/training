@@ -1,0 +1,32 @@
+diff bw page and section
+diff bw class and modules
+route - refers to the path that data packets take from source to destination within the network.
+router - physical and virtual device that forwards data packets bw computer networks.uses routing tables & protocols to determine best path for forwarding the packets.
+OSI model - OSI stands for Open Systems Interconnection. It is a 7-layer architecture with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe. The OSI reference model was developed by ISO, in the year 1984. the 7 layers are: 
+    Application Layer: Applications create the data.
+    Presentation Layer: Data is formatted and encrypted.
+    Session Layer: Connections are established and managed.
+    Transport Layer: Data is broken into segments for reliable delivery.
+    Network Layer: Segments are packaged into packets and routed.
+    Data Link Layer: Packets are framed and sent to the next device.
+    Physical Layer: Frames are converted into bits and transmitted physically.
+
+Network - A network consists of two or more computers that are linked in order to share resources (such as printers and CDs), exchange files, or allow electronic communications.
+data warehouse - In computing, a data warehouse, also known as an enterprise data warehouse, is a system used for reporting and data analysis and is considered a core component of business intelligence. Data warehouses are central repositories of integrated data from one or more disparate sources. 
+API-  Application Programming Interface. works as bridge bw front and back end. An application programming interface is a way for two or more computer programs or components to communicate with each other. 
+data structures - https://www.geeksforgeeks.org/introduction-to-data-structures/
+OOPS - https://youtu.be/6Ff5ls0TXHU
+VPN -
+Big O
+binary search
+recursion - a function calls itself
+airbnb rules for coding
+null / undefined 
+regular expressions - regex ??use them to simplify the time code??
+(gsub, scan, replace)
+exam qsn no: 10
+SOLID principles
+SSH
+try writing schoolhash in a class
+
+

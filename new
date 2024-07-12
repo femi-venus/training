@@ -1,0 +1,102 @@
+def year_to_days(age)
+    leap = age/4
+    days = (age*365) + leap
+end
+year_to_days(27)
+
+def odd_or_even(str)
+   
+    if str.length % 2 == 0
+        output = "#{str} is even."
+    else
+        output =  "#{str} is odd."
+    end
+    output
+end
+odd_or_even("Australian")
+
+def missing_numbers (arr)
+    missing_nums = []
+    for i in arr[0]..arr[-1]
+        next if arr.include? i
+        missing_nums << i
+    end
+    missing_nums 
+end
+missing_numbers ([81,83,84,87,95,100])
+
+def first_letter (str)
+    words = str.split(" ")
+    words.map{|word|
+first_letter = word[0]
+}
+end
+first_letter ("The Australian Open is a tennis tournament held anually at Melbourne, Victoria, Australia. The tournament is the first of the four Grand Slam tennis events held each year, preceding the French Open, Wimbeldon, and the US Open.")
+
+
+def factorial (number)
+    factorial = 1
+    for int in 1..number
+        factorial *= int
+    end
+    factorial
+end
+factorial (3)
+
+num = 5
+    for i in 1..num
+        for j in i..num
+            print " "
+            j += 1
+        end
+        for k in 1..i
+            print "*"
+        end
+        puts
+        i -= 1
+    end
+
+    def sort (arr)
+        sorted = false
+        (arr.length-1).times do 
+            for i in 0..arr.length
+                if arr[i] > arr[i+1]
+                    arr[i], arr [i+1] = arr[i+1],arr[i]
+                    sorted = true 
+                end
+             end
+            end
+        arr
+    end
+    sort ([8,11,3,5,88,1,37])
+
+    def postfix (input)
+        precedence = {"+" => 1,"-" => 1,"*" => 2,"/" =>2}
+        output = ""
+        stack = []
+        members = input.split("")
+        members.each{|element|
+        if element == "/\w/"
+            output += element
+        elsif element == "("
+            stack << element 
+        elsif element == ")"
+            output += stack.pop until stack.last != "("
+        else
+            while !stack.empty? && precedence[stack.last] >= precedence[element]
+                output += stack.pop
+            end
+            stack.pop
+        end
+        while !stack.empty?
+            output += stack.pop
+        end
+        output
+    end
+    postfix("((a-(b/c)*((a/d)-e))")
+    
+    
+
+
+
+            
